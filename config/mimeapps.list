@@ -1,0 +1,7 @@
+[Default Applications]
+
+[Added Associations]
+application/pdf=evince.desktop;atril.desktop;
+audio/mpeg=audacious.desktop;
+image/jpeg=nomacs.desktop;feh.desktop;gimp.desktop;
+image/gif=vlc.desktop;feh.desktop;

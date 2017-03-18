@@ -1,0 +1,22 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda3
+UUID=2f46bb16-d165-4498-97fa-75a82d402c76	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sda1
+UUID=9FD6-0B1D      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+# /dev/sda9
+#This has all perms but requires sudo /dev/sda9 /mnt/Anything ntfs-3g uid=1000,gid=1000,umask=000 0 0
+#/dev/sda9 /mnt/Anything ntfs-3g uid=1000,gid=1000,umask=000 0 0
+
+#/dev/sda9 /mnt/Anything ntfs-3g defaults,user,rw,umask=000 0 0
+#/dev/sda9 /mnt/Anything ntfs-3g rw,auto,users,exec,nls=utf8,umask=003,gid=46,uid=1000    0   2
+# from mint /dev/sda9 /mnt/Anything auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=Anything 0 0
+
+# For /dev/sda9 either use either of the below
+#/dev/sda9 /mnt/Anything auto uid=1000,gid=1000,permissions,relatime,noauto,nofail 0 0
+/dev/sda9 /mnt/Anything auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=Anything,noauto 0 0
+
+
